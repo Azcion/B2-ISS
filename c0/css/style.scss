@@ -1,4 +1,11 @@
-header {
+@media screen and (min-width: 600px) {
+	.wrapper {
+		max-width: 600px;
+		margin: auto;
+	}
+}
+
+nav {
 	margin: auto;
 	display: flex;
 	max-width: 600px;
@@ -9,15 +16,8 @@ footer {
 	text-align: center;
 }
 
-h1, h2, p, header, footer {
+h1, h2, p, nav, footer {
 	font-family: Arial, Helvetica, sans-serif;
-}
-
-@media screen and (min-width: 600px) {
-	.wrapper {
-		max-width: 600px;
-		margin: auto;
-	}
 }
 
 #top {
