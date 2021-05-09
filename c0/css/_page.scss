@@ -27,17 +27,17 @@ article a:hover {
 }
 
 @media screen /* large screen */
-and (min-width: $min-screen) {
+and (min-width: $mobile) {
 	.wrapper {
 		position: relative;
 		min-height: 100vh;
-		max-width: $min-screen - 50px;
+		max-width: $mobile - 40px;
 		margin: auto;
 	}
 }
 
 @media screen /* small screen */
-and (max-width: $min-screen - 1) {
+and (max-width: $mobile - 1) {
 	.wrapper {
 		position: relative;
 		min-height: 100vh;
@@ -66,7 +66,7 @@ h1, h2, p, span, li, footer {
 }
 
 @media screen /* large screen */
-and (min-width: $min-mobile) {
+and (min-width: $mobile) {
 	.horizontal-pair {
 		.left, .right {
 			width: 50%;
@@ -83,7 +83,7 @@ and (min-width: $min-mobile) {
 }
 
 @media screen /* small screen */
-and (max-width: $min-mobile - 1) {
+and (max-width: $mobile - 1) {
 	.horizontal-pair {
 		flex-direction: column;
 	

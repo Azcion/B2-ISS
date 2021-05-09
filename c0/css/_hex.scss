@@ -68,12 +68,11 @@ $block: '.hex-';
 
 	&content a img:hover {
 		transform: scale(1.15);
-		transition: transform 0.5s ease-in-out;
 	}
 }
 
 @media screen
-and (min-width: 480px) {
+and (min-width: $tablet) {
 	#{$block} {
 		&list {
 			--amount: 2;
@@ -84,5 +83,16 @@ and (min-width: 480px) {
 		&item {
 			@include make-grid-item(2);
 		}
+	}
+}
+
+@media screen
+and (max-width: $tablet) {
+	.hex-content a img {
+		transform: scale(1.3);
+	}
+
+	.hex-content a img:hover {
+		transform: scale(1.5);
 	}
 }

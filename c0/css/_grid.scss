@@ -1,20 +1,20 @@
 @media screen
-and (min-width: $min-tablet) {
+and (min-width: $tablet) {
 	.grid {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 }
 
 @media screen
-and (min-width: $min-mobile)
-and (max-width: $min-tablet - 1) {
+and (min-width: $mobile)
+and (max-width: $tablet - 1) {
 	.grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
 
 @media screen
-and (max-width: $min-mobile - 1) {
+and (max-width: $mobile - 1) {
 	.grid {
 		display: block;
 	}

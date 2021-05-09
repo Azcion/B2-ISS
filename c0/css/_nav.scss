@@ -29,14 +29,26 @@ nav {
 }
 
 @media screen
-and (min-width: $min-screen) {
+and (min-width: $mobile) {
 	nav {
 		justify-content: space-around;
 		flex-wrap: nowrap;
+	}
+}
 
-		p {
-			min-width: 100px;
-		}
+@media screen
+and (min-width: $tablet) {
+	nav p {
+		min-width: 100px;
+	}
+}
+
+@media screen
+and (min-width: $mobile)
+and (max-width: $tablet - 1) {
+	nav p {
+		min-width: 80px;
+		margin-top: 12px;
 	}
 }
 

@@ -3,10 +3,8 @@ $gray: hsl(0, 0, 42);
 $red: hsl(6, 82, 64);
 $bg-color: $black;
 
-$min-screen: 900px;
-$min-tablet: 750px;
-$min-mobile: 550px;
-$min-narrow: 450px;
+$mobile: 768px;
+$tablet: 992px;
 
 $spin-time: 100s;
 $acid-time: 20s;

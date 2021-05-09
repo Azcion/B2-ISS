@@ -12,7 +12,7 @@
 }
 
 @media screen /* large screen */
-and (min-width: $min-screen) {
+and (min-width: $mobile) {
 	#tagline {
 		font-size: 5rem;
 		letter-spacing: -6px;
@@ -21,7 +21,7 @@ and (min-width: $min-screen) {
 }
 
 @media screen /* small screen */
-and (max-width: $min-screen - 1) {
+and (max-width: $mobile - 1) {
 	#tagline {
 		font-size: 3rem;
 		letter-spacing: -3px;
