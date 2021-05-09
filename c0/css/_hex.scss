@@ -39,8 +39,8 @@ $block: '.hex-';
 		grid-row: calc(var(--counter) + var(--counter)) / span 2;
 		height: 0;
 		padding-bottom: 90%;
-		filter: none;
-		transition: filter 0.5s;
+		filter: drop-shadow(0 0 10px $black);
+		transition: filter 0.3s;
     }
 
 	&item:hover {
