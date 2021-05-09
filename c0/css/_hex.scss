@@ -22,9 +22,10 @@ $block: '.hex-';
 	justify-content: center;
 
     &list {
+		overflow: hidden;
+		padding: 20px;
         --amount: 1;
         position: relative;
-        padding: 0;
 		margin: 0;
 		list-style-type: none;
 		display: grid;
