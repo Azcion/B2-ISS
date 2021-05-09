@@ -90,4 +90,60 @@ and (max-width: $min-mobile - 1) {
 
 .horizontal-pair {
 	display: flex;
+	align-items: center;
+
+	.left {
+		.hex-item {
+			filter: drop-shadow(0 0 20px rgba($black, 1));
+			transition: filter 0s;
+		}
+	}
+}
+
+.hex-content.funky {
+	align-items: stretch;
+	animation: spin $spin-time linear infinite;
+	padding: 0;
+
+	img {
+		margin: -2%;
+	}
+
+	img.with-full-effects {
+		animation:
+			spin $spin-time linear infinite reverse,
+			acid $acid-time linear infinite;
+	}
+
+	img.with-simple-effects {
+		position: absolute;
+		width: 104%;
+		opacity: 0;
+		transition: opacity 0.5s;
+		animation: spin $spin-time linear infinite reverse;
+	}
+}
+
+.hex-item:hover {
+	img.with-simple-effects {
+		opacity: 1;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+    to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes acid {
+	from {
+		filter: hue-rotate(0deg);
+	}
+	to {
+		filter: hue-rotate(360deg);
+	}
 }

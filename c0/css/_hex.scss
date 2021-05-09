@@ -45,7 +45,6 @@ $block: '.hex-';
 
 	&item:hover {
 		filter: drop-shadow(0 0 10px rgba($red, 1));
-		transition: 0.5s;
 	}
 
     &content {
@@ -70,14 +69,6 @@ $block: '.hex-';
 	&content a img:hover {
 		transform: scale(1.15);
 		transition: transform 0.5s ease-in-out;
-	}
-
-	&content.stretch {
-		align-items: stretch;
-
-		img {
-			transform: scale(2);
-		}
 	}
 }
 
