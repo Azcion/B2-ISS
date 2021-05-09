@@ -1,0 +1,49 @@
+nav {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	flex-wrap: wrap;
+
+	p {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 10px;
+		border-bottom-color: $gray;
+		text-transform: uppercase;
+	
+		a {
+			display: block;
+			margin-top: 60%;
+			padding-bottom: 5px;
+			text-decoration: none;
+			color: $gray;
+			border-bottom: 1px solid $gray;
+		}
+	
+		a[class*="nav-here"] {
+			color: $red;
+			border-bottom: 1px solid $red;
+		}
+	}
+}
+
+@media screen
+and (min-width: $min-screen) {
+	nav {
+		justify-content: space-around;
+		flex-wrap: nowrap;
+
+		p {
+			min-width: 100px;
+		}
+	}
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}

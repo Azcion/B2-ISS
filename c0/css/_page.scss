@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+}
+
+*, :after, :before {
+	box-sizing: border-box;
+}
+
+::selection {
+	color: white;
+	background-color: $red;
+}
+
+a:focus, img:focus {
+	filter: drop-shadow(0 0 10px rgba($red, 1));
+	transition: 0.3s ease-in-out;
+}
+
+@media screen /* large screen */
+and (min-width: $min-screen) {
+	.wrapper {
+		position: relative;
+		min-height: 100vh;
+		max-width: $min-screen - 50px;
+		margin: auto;
+	}
+}
+
+@media screen /* small screen */
+and (max-width: $min-screen - 1) {
+	.wrapper {
+		position: relative;
+		min-height: 100vh;
+		max-width: calc(100% - 50px);
+	}
+}
+
+.wrapper {
+	margin: auto;
+}
+
+main {
+	margin: 2rem 0
+}
+
+footer {
+	text-align: center;
+	position: absolute;
+    bottom: 0;
+    height: 2em;
+    width: 100%;
+}
+
+h1, h2, p, footer {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen /* large screen */
+and (min-width: $min-mobile) {
+	.horizontal-pair {
+		.left, .right {
+			width: 50%;
+		}
+
+		.left {
+			margin-right: 3%;
+		}
+	
+		.right {
+			margin-left: 3%;
+		}
+	}
+}
+
+@media screen /* small screen */
+and (max-width: $min-mobile - 1) {
+	.horizontal-pair {
+		flex-direction: column;
+	
+		.left, .right {
+			margin: auto;
+			width: 85%;
+		}
+
+		.right {
+			margin-top: 1rem;
+		}
+	}
+}
+
+.horizontal-pair {
+	display: flex;
+}
