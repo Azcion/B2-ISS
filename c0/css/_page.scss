@@ -119,6 +119,11 @@ and (max-width: $min-mobile - 1) {
 		margin: -2%;
 	}
 
+	img.with-full-effects, img.with-simple-effects {
+		position: absolute;
+		width: 104%;
+	}
+
 	img.with-full-effects {
 		animation:
 			spin $spin-time linear infinite reverse,
@@ -126,8 +131,6 @@ and (max-width: $min-mobile - 1) {
 	}
 
 	img.with-simple-effects {
-		position: absolute;
-		width: 104%;
 		opacity: 0;
 		transition: opacity 0.5s;
 		animation: spin $spin-time linear infinite reverse;
