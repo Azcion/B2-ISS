@@ -1,12 +1,12 @@
 mixin logo(platform)
-	a(class=`logo-container ${platform}` href='/')
+	a(class=`logo-container ${platform}` href='/B2-ISS/c0/dist/')
 		div.logo
 			img.logo-svg(src='img/assets/logo.svg' alt='Logo')
 
 mixin pal(text)
 	p.text-left
-		a(href='/'+text) #{text}
+		a(href='/dist/'+text) #{text}
 
 mixin par(text, link)
 	p.text-right
-		a(href=link||text) #{text}
+		a(href=link || '/dist/'+text) #{text}
