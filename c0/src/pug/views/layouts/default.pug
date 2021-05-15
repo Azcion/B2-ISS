@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+	include ../partials/head.pug
+	body(barba='wrapper')
+		// <wrapper> 
+		div.wrapper
+			include ../partials/header.pug
+			// <content> 
+			main(barba='container')
+				block content
+			// </content> 
+			br
+			footer
+				small Copyright&nbsp;&copy;&nbsp;#{new Date().getFullYear()}&nbsp;·&nbsp;Zak&nbsp;Klajderic
+		// </wrapper> 
+		if doParticles
+			div#particles
+		if doLightbox
+			include ../partials/photoswipe.htm

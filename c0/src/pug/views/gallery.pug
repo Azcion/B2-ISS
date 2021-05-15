@@ -1,0 +1,35 @@
+extends ./layouts/default.pug
+
+block vars
+	- pageTitle = 'Gallery'
+	- doLightbox = true
+
+block tagline
+	h1#tagline Gallery&nbsp;demo
+
+block content
+	section
+		div.galleries
+			each gallery in galleries
+				h2 #{gallery.title}
+				button.click-to-expand(id=`button-${gallery.path}`)
+				div.gallery.g-tiny(id=`gallery-${gallery.path}`)
+					-
+						var i = 0;
+						const path = `img/galleries/${gallery.path}`;
+					each img in gallery.images
+						-
+							const file = `${gallery.path}_${img}`;
+							const filename = `${file}.1080.webp`;
+							const author = img.split('-')
+								.map(w => w[0].toUpperCase() + w.substr(1))
+								.join(' ');
+							const alt = `Picture of ${gallery.noun} by ${author}`;
+						figure(data-i=i++)
+							span #{author}
+							a(
+								href=`${path}/${filename}`
+								data-size=`${imgData[filename].w}x${imgData[filename].h}`
+								data-caption=alt
+							)
+								img(alt=alt src=`${path}/${file}.500.webp`)

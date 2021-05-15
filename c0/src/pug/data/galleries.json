@@ -1,0 +1,91 @@
+{
+	"galleries": [
+		{
+			"title": "Islands",
+			"path": "islands",
+			"noun": "islands",
+			"images": [
+				"oliver-sjöström",
+				"riciardus",
+				"nextvoyage",
+				"asad-photo-maldives",
+				"stijn-dijkstra",
+				"ingo-joseph",
+				"flo-dahm",
+				"arist-creathrive"
+			]
+		},
+		{
+			"title": "Mountains",
+			"path": "mountains",
+			"noun": "mountains",
+			"images": [
+				"tobias-bjørkli",
+				"eberhard-grossgasteiger",
+				"sam-kolder",
+				"zhaocan-li",
+				"gianluca-grisenti",
+				"francisco-buduba",
+				"trace-hudson"
+			]
+		},
+		{
+			"title": "Jungles",
+			"path": "jungles",
+			"noun": "a jungle",
+			"images": [
+				"tom-fisk",
+				"david-riaño-cortés",
+				"magda-ehlers",
+				"antonio-friedemann",
+				"almoatasem-alaa-el-din",
+				"andré-cook",
+				"thefacesiseek-(saptarshi)",
+				"carsten-ruthemann"
+			]
+		},
+		{
+			"title": "Deserts",
+			"path": "deserts",
+			"noun": "a desert",
+			"images": [
+				"shahid-tanweer",
+				"vlad-chețan",
+				"amine-m'siouri",
+				"alex-azabache",
+				"oday-hazeem",
+				"joao-oliveira",
+				"anne-mccarthy",
+				"mr-location-scout"
+			]
+		},
+		{
+			"title": "Grasslands",
+			"path": "grasslands",
+			"noun": "a grassland",
+			"images": [
+				"oleg-magni",
+				"fabiotsu",
+				"erkan-güneş",
+				"sunsetoned",
+				"francesco-ungaro",
+				"jahoo-clouseau"
+			]
+		},
+		{
+			"title": "Cities",
+			"path": "cities",
+			"noun": "a city",
+			"images": [
+				"aleksandar-pasaric",
+				"pixabay",
+				"lukas-kloeppel",
+				"tom-fisk",
+				"suzukii-xingfu",
+				"te-lensfix",
+				"elina-sazonova",
+				"frans-van-heerden"
+			]
+		}
+	]
+}

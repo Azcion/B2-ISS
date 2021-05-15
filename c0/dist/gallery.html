@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Assignment" />
+    <title>c0::Gallery</title>
+    <link rel="icon" type="image/png" href="img/assets/favicon.ico" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+    <script defer src="js/lightbox.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body barba="wrapper">
+    <!-- <wrapper> -->
+    <div class="wrapper">
+      <header>
+        <a class="logo-container mobile" href="/"
+          ><div class="logo"><img class="logo-svg" src="img/assets/logo.svg" alt="Logo" /></div
+        ></a>
+        <nav>
+          <p class="text-left"><a href="/blog">blog</a></p>
+          <p class="text-left"><a href="/gallery">gallery</a></p>
+          <p class="text-left"><a href="/archive">archive</a></p>
+          <a class="logo-container screen" href="/"
+            ><div class="logo"><img class="logo-svg" src="img/assets/logo.svg" alt="Logo" /></div
+          ></a>
+          <p class="text-right"><a href="about">about</a></p>
+          <p class="text-right"><a href="https://github.com/Azcion/B2-ISS">GitHub</a></p>
+          <p class="text-right"><a href="mailto:zak.klajderic@gmail.com">Contact</a></p>
+        </nav>
+        <div id="top">
+          <div><h1 id="tagline">Gallery&nbsp;demo</h1></div>
+        </div>
+      </header>
+      <!-- <content> -->
+      <main barba="container">
+        <section>
+          <div class="galleries">
+            <h2>Islands</h2>
+            <button class="click-to-expand" id="button-islands"></button>
+            <div class="gallery g-tiny" id="gallery-islands">
+              <figure data-i="0">
+                <span>Oliver Sjöström</span><a href="img/galleries/islands/islands_oliver-sjöström.1080.webp" data-size="1080x1350" data-caption="Picture of islands by Oliver Sjöström"><img alt="Picture of islands by Oliver Sjöström" src="img/galleries/islands/islands_oliver-sjöström.500.webp" /></a>
+              </figure>
+              <figure data-i="1">
+                <span>Riciardus</span><a href="img/galleries/islands/islands_riciardus.1080.webp" data-size="1471x1080" data-caption="Picture of islands by Riciardus"><img alt="Picture of islands by Riciardus" src="img/galleries/islands/islands_riciardus.500.webp" /></a>
+              </figure>
+              <figure data-i="2">
+                <span>Nextvoyage</span><a href="img/galleries/islands/islands_nextvoyage.1080.webp" data-size="1440x1080" data-caption="Picture of islands by Nextvoyage"><img alt="Picture of islands by Nextvoyage" src="img/galleries/islands/islands_nextvoyage.500.webp" /></a>
+              </figure>
+              <figure data-i="3">
+                <span>Asad Photo Maldives</span><a href="img/galleries/islands/islands_asad-photo-maldives.1080.webp" data-size="1623x1080" data-caption="Picture of islands by Asad Photo Maldives"><img alt="Picture of islands by Asad Photo Maldives" src="img/galleries/islands/islands_asad-photo-maldives.500.webp" /></a>
+              </figure>
+              <figure data-i="4">
+                <span>Stijn Dijkstra</span><a href="img/galleries/islands/islands_stijn-dijkstra.1080.webp" data-size="1080x1778" data-caption="Picture of islands by Stijn Dijkstra"><img alt="Picture of islands by Stijn Dijkstra" src="img/galleries/islands/islands_stijn-dijkstra.500.webp" /></a>
+              </figure>
+              <figure data-i="5">
+                <span>Ingo Joseph</span><a href="img/galleries/islands/islands_ingo-joseph.1080.webp" data-size="2165x1080" data-caption="Picture of islands by Ingo Joseph"><img alt="Picture of islands by Ingo Joseph" src="img/galleries/islands/islands_ingo-joseph.500.webp" /></a>
+              </figure>
+              <figure data-i="6">
+                <span>Flo Dahm</span><a href="img/galleries/islands/islands_flo-dahm.1080.webp" data-size="1442x1080" data-caption="Picture of islands by Flo Dahm"><img alt="Picture of islands by Flo Dahm" src="img/galleries/islands/islands_flo-dahm.500.webp" /></a>
+              </figure>
+              <figure data-i="7">
+                <span>Arist Creathrive</span><a href="img/galleries/islands/islands_arist-creathrive.1080.webp" data-size="1920x1080" data-caption="Picture of islands by Arist Creathrive"><img alt="Picture of islands by Arist Creathrive" src="img/galleries/islands/islands_arist-creathrive.500.webp" /></a>
+              </figure>
+            </div>
+            <h2>Mountains</h2>
+            <button class="click-to-expand" id="button-mountains"></button>
+            <div class="gallery g-tiny" id="gallery-mountains">
+              <figure data-i="0">
+                <span>Tobias Bjørkli</span><a href="img/galleries/mountains/mountains_tobias-bjørkli.1080.webp" data-size="1350x1080" data-caption="Picture of mountains by Tobias Bjørkli"><img alt="Picture of mountains by Tobias Bjørkli" src="img/galleries/mountains/mountains_tobias-bjørkli.500.webp" /></a>
+              </figure>
+              <figure data-i="1">
+                <span>Eberhard Grossgasteiger</span><a href="img/galleries/mountains/mountains_eberhard-grossgasteiger.1080.webp" data-size="1080x1620" data-caption="Picture of mountains by Eberhard Grossgasteiger"><img alt="Picture of mountains by Eberhard Grossgasteiger" src="img/galleries/mountains/mountains_eberhard-grossgasteiger.500.webp" /></a>
+              </figure>
+              <figure data-i="2">
+                <span>Sam Kolder</span><a href="img/galleries/mountains/mountains_sam-kolder.1080.webp" data-size="1080x1620" data-caption="Picture of mountains by Sam Kolder"><img alt="Picture of mountains by Sam Kolder" src="img/galleries/mountains/mountains_sam-kolder.500.webp" /></a>
+              </figure>
+              <figure data-i="3">
+                <span>Zhaocan Li</span><a href="img/galleries/mountains/mountains_zhaocan-li.1080.webp" data-size="1080x1620" data-caption="Picture of mountains by Zhaocan Li"><img alt="Picture of mountains by Zhaocan Li" src="img/galleries/mountains/mountains_zhaocan-li.500.webp" /></a>
+              </figure>
+              <figure data-i="4">
+                <span>Gianluca Grisenti</span><a href="img/galleries/mountains/mountains_gianluca-grisenti.1080.webp" data-size="1080x1440" data-caption="Picture of mountains by Gianluca Grisenti"><img alt="Picture of mountains by Gianluca Grisenti" src="img/galleries/mountains/mountains_gianluca-grisenti.500.webp" /></a>
+              </figure>
+              <figure data-i="5">
+                <span>Francisco Buduba</span><a href="img/galleries/mountains/mountains_francisco-buduba.1080.webp" data-size="1080x1350" data-caption="Picture of mountains by Francisco Buduba"><img alt="Picture of mountains by Francisco Buduba" src="img/galleries/mountains/mountains_francisco-buduba.500.webp" /></a>
+              </figure>
+              <figure data-i="6">
+                <span>Trace Hudson</span><a href="img/galleries/mountains/mountains_trace-hudson.1080.webp" data-size="1080x1350" data-caption="Picture of mountains by Trace Hudson"><img alt="Picture of mountains by Trace Hudson" src="img/galleries/mountains/mountains_trace-hudson.500.webp" /></a>
+              </figure>
+            </div>
+            <h2>Jungles</h2>
+            <button class="click-to-expand" id="button-jungles"></button>
+            <div class="gallery g-tiny" id="gallery-jungles">
+              <figure data-i="0">
+                <span>Tom Fisk</span><a href="img/galleries/jungles/jungles_tom-fisk.1080.webp" data-size="1617x1080" data-caption="Picture of a jungle by Tom Fisk"><img alt="Picture of a jungle by Tom Fisk" src="img/galleries/jungles/jungles_tom-fisk.500.webp" /></a>
+              </figure>
+              <figure data-i="1">
+                <span>David Riaño Cortés</span><a href="img/galleries/jungles/jungles_david-riaño-cortés.1080.webp" data-size="1928x1080" data-caption="Picture of a jungle by David Riaño Cortés"><img alt="Picture of a jungle by David Riaño Cortés" src="img/galleries/jungles/jungles_david-riaño-cortés.500.webp" /></a>
+              </figure>
+              <figure data-i="2">
+                <span>Magda Ehlers</span><a href="img/galleries/jungles/jungles_magda-ehlers.1080.webp" data-size="1080x1620" data-caption="Picture of a jungle by Magda Ehlers"><img alt="Picture of a jungle by Magda Ehlers" src="img/galleries/jungles/jungles_magda-ehlers.500.webp" /></a>
+              </figure>
+              <figure data-i="3">
+                <span>Antonio Friedemann</span><a href="img/galleries/jungles/jungles_antonio-friedemann.1080.webp" data-size="1080x1620" data-caption="Picture of a jungle by Antonio Friedemann"><img alt="Picture of a jungle by Antonio Friedemann" src="img/galleries/jungles/jungles_antonio-friedemann.500.webp" /></a>
+              </figure>
+              <figure data-i="4">
+                <span>Almoatasem Alaa El Din</span><a href="img/galleries/jungles/jungles_almoatasem-alaa-el-din.1080.webp" data-size="1080x1620" data-caption="Picture of a jungle by Almoatasem Alaa El Din"><img alt="Picture of a jungle by Almoatasem Alaa El Din" src="img/galleries/jungles/jungles_almoatasem-alaa-el-din.500.webp" /></a>
+              </figure>
+              <figure data-i="5">
+                <span>André Cook</span><a href="img/galleries/jungles/jungles_andré-cook.1080.webp" data-size="1919x1080" data-caption="Picture of a jungle by André Cook"><img alt="Picture of a jungle by André Cook" src="img/galleries/jungles/jungles_andré-cook.500.webp" /></a>
+              </figure>
+              <figure data-i="6">
+                <span>Thefacesiseek (saptarshi)</span><a href="img/galleries/jungles/jungles_thefacesiseek-(saptarshi).1080.webp" data-size="1080x1440" data-caption="Picture of a jungle by Thefacesiseek (saptarshi)"><img alt="Picture of a jungle by Thefacesiseek (saptarshi)" src="img/galleries/jungles/jungles_thefacesiseek-(saptarshi).500.webp" /></a>
+              </figure>
+              <figure data-i="7">
+                <span>Carsten Ruthemann</span><a href="img/galleries/jungles/jungles_carsten-ruthemann.1080.webp" data-size="1080x1619" data-caption="Picture of a jungle by Carsten Ruthemann"><img alt="Picture of a jungle by Carsten Ruthemann" src="img/galleries/jungles/jungles_carsten-ruthemann.500.webp" /></a>
+              </figure>
+            </div>
+            <h2>Deserts</h2>
+            <button class="click-to-expand" id="button-deserts"></button>
+            <div class="gallery g-tiny" id="gallery-deserts">
+              <figure data-i="0">
+                <span>Shahid Tanweer</span><a href="img/galleries/deserts/deserts_shahid-tanweer.1080.webp" data-size="1620x1080" data-caption="Picture of a desert by Shahid Tanweer"><img alt="Picture of a desert by Shahid Tanweer" src="img/galleries/deserts/deserts_shahid-tanweer.500.webp" /></a>
+              </figure>
+              <figure data-i="1">
+                <span>Vlad Chețan</span><a href="img/galleries/deserts/deserts_vlad-chețan.1080.webp" data-size="1080x1620" data-caption="Picture of a desert by Vlad Chețan"><img alt="Picture of a desert by Vlad Chețan" src="img/galleries/deserts/deserts_vlad-chețan.500.webp" /></a>
+              </figure>
+              <figure data-i="2">
+                <span>Amine M'siouri</span><a href="img/galleries/deserts/deserts_amine-m'siouri.1080.webp" data-size="1080x1326" data-caption="Picture of a desert by Amine M'siouri"><img alt="Picture of a desert by Amine M'siouri" src="img/galleries/deserts/deserts_amine-m'siouri.500.webp" /></a>
+              </figure>
+              <figure data-i="3">
+                <span>Alex Azabache</span><a href="img/galleries/deserts/deserts_alex-azabache.1080.webp" data-size="1080x1620" data-caption="Picture of a desert by Alex Azabache"><img alt="Picture of a desert by Alex Azabache" src="img/galleries/deserts/deserts_alex-azabache.500.webp" /></a>
+              </figure>
+              <figure data-i="4">
+                <span>Oday Hazeem</span><a href="img/galleries/deserts/deserts_oday-hazeem.1080.webp" data-size="1579x1080" data-caption="Picture of a desert by Oday Hazeem"><img alt="Picture of a desert by Oday Hazeem" src="img/galleries/deserts/deserts_oday-hazeem.500.webp" /></a>
+              </figure>
+              <figure data-i="5">
+                <span>Joao Oliveira</span><a href="img/galleries/deserts/deserts_joao-oliveira.1080.webp" data-size="1080x1620" data-caption="Picture of a desert by Joao Oliveira"><img alt="Picture of a desert by Joao Oliveira" src="img/galleries/deserts/deserts_joao-oliveira.500.webp" /></a>
+              </figure>
+              <figure data-i="6">
+                <span>Anne Mccarthy</span><a href="img/galleries/deserts/deserts_anne-mccarthy.1080.webp" data-size="1080x1463" data-caption="Picture of a desert by Anne Mccarthy"><img alt="Picture of a desert by Anne Mccarthy" src="img/galleries/deserts/deserts_anne-mccarthy.500.webp" /></a>
+              </figure>
+              <figure data-i="7">
+                <span>Mr Location Scout</span><a href="img/galleries/deserts/deserts_mr-location-scout.1080.webp" data-size="1620x1080" data-caption="Picture of a desert by Mr Location Scout"><img alt="Picture of a desert by Mr Location Scout" src="img/galleries/deserts/deserts_mr-location-scout.500.webp" /></a>
+              </figure>
+            </div>
+            <h2>Grasslands</h2>
+            <button class="click-to-expand" id="button-grasslands"></button>
+            <div class="gallery g-tiny" id="gallery-grasslands">
+              <figure data-i="0">
+                <span>Oleg Magni</span><a href="img/galleries/grasslands/grasslands_oleg-magni.1080.webp" data-size="1620x1080" data-caption="Picture of a grassland by Oleg Magni"><img alt="Picture of a grassland by Oleg Magni" src="img/galleries/grasslands/grasslands_oleg-magni.500.webp" /></a>
+              </figure>
+              <figure data-i="1">
+                <span>Fabiotsu</span><a href="img/galleries/grasslands/grasslands_fabiotsu.1080.webp" data-size="1080x1440" data-caption="Picture of a grassland by Fabiotsu"><img alt="Picture of a grassland by Fabiotsu" src="img/galleries/grasslands/grasslands_fabiotsu.500.webp" /></a>
+              </figure>
+              <figure data-i="2">
+                <span>Erkan Güneş</span><a href="img/galleries/grasslands/grasslands_erkan-güneş.1080.webp" data-size="1620x1080" data-caption="Picture of a grassland by Erkan Güneş"><img alt="Picture of a grassland by Erkan Güneş" src="img/galleries/grasslands/grasslands_erkan-güneş.500.webp" /></a>
+              </figure>
+              <figure data-i="3">
+                <span>Sunsetoned</span><a href="img/galleries/grasslands/grasslands_sunsetoned.1080.webp" data-size="1080x1440" data-caption="Picture of a grassland by Sunsetoned"><img alt="Picture of a grassland by Sunsetoned" src="img/galleries/grasslands/grasslands_sunsetoned.500.webp" /></a>
+              </figure>
+              <figure data-i="4">
+                <span>Francesco Ungaro</span><a href="img/galleries/grasslands/grasslands_francesco-ungaro.1080.webp" data-size="2002x1080" data-caption="Picture of a grassland by Francesco Ungaro"><img alt="Picture of a grassland by Francesco Ungaro" src="img/galleries/grasslands/grasslands_francesco-ungaro.500.webp" /></a>
+              </figure>
+              <figure data-i="5">
+                <span>Jahoo Clouseau</span><a href="img/galleries/grasslands/grasslands_jahoo-clouseau.1080.webp" data-size="2048x1080" data-caption="Picture of a grassland by Jahoo Clouseau"><img alt="Picture of a grassland by Jahoo Clouseau" src="img/galleries/grasslands/grasslands_jahoo-clouseau.500.webp" /></a>
+              </figure>
+            </div>
+            <h2>Cities</h2>
+            <button class="click-to-expand" id="button-cities"></button>
+            <div class="gallery g-tiny" id="gallery-cities">
+              <figure data-i="0">
+                <span>Aleksandar Pasaric</span><a href="img/galleries/cities/cities_aleksandar-pasaric.1080.webp" data-size="1620x1080" data-caption="Picture of a city by Aleksandar Pasaric"><img alt="Picture of a city by Aleksandar Pasaric" src="img/galleries/cities/cities_aleksandar-pasaric.500.webp" /></a>
+              </figure>
+              <figure data-i="1">
+                <span>Pixabay</span><a href="img/galleries/cities/cities_pixabay.1080.webp" data-size="1613x1080" data-caption="Picture of a city by Pixabay"><img alt="Picture of a city by Pixabay" src="img/galleries/cities/cities_pixabay.500.webp" /></a>
+              </figure>
+              <figure data-i="2">
+                <span>Lukas Kloeppel</span><a href="img/galleries/cities/cities_lukas-kloeppel.1080.webp" data-size="1740x1080" data-caption="Picture of a city by Lukas Kloeppel"><img alt="Picture of a city by Lukas Kloeppel" src="img/galleries/cities/cities_lukas-kloeppel.500.webp" /></a>
+              </figure>
+              <figure data-i="3">
+                <span>Tom Fisk</span><a href="img/galleries/cities/cities_tom-fisk.1080.webp" data-size="1572x1080" data-caption="Picture of a city by Tom Fisk"><img alt="Picture of a city by Tom Fisk" src="img/galleries/cities/cities_tom-fisk.500.webp" /></a>
+              </figure>
+              <figure data-i="4">
+                <span>Suzukii Xingfu</span><a href="img/galleries/cities/cities_suzukii-xingfu.1080.webp" data-size="1624x1080" data-caption="Picture of a city by Suzukii Xingfu"><img alt="Picture of a city by Suzukii Xingfu" src="img/galleries/cities/cities_suzukii-xingfu.500.webp" /></a>
+              </figure>
+              <figure data-i="5">
+                <span>Te Lensfix</span><a href="img/galleries/cities/cities_te-lensfix.1080.webp" data-size="1620x1080" data-caption="Picture of a city by Te Lensfix"><img alt="Picture of a city by Te Lensfix" src="img/galleries/cities/cities_te-lensfix.500.webp" /></a>
+              </figure>
+              <figure data-i="6">
+                <span>Elina Sazonova</span><a href="img/galleries/cities/cities_elina-sazonova.1080.webp" data-size="1620x1080" data-caption="Picture of a city by Elina Sazonova"><img alt="Picture of a city by Elina Sazonova" src="img/galleries/cities/cities_elina-sazonova.500.webp" /></a>
+              </figure>
+              <figure data-i="7">
+                <span>Frans Van Heerden</span><a href="img/galleries/cities/cities_frans-van-heerden.1080.webp" data-size="1738x1080" data-caption="Picture of a city by Frans Van Heerden"><img alt="Picture of a city by Frans Van Heerden" src="img/galleries/cities/cities_frans-van-heerden.500.webp" /></a>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- </content> --><br />
+      <footer><small>Copyright&nbsp;&copy;&nbsp;2021&nbsp;·&nbsp;Zak&nbsp;Klajderic</small></footer>
+    </div>
+    <!-- </wrapper> --><!-- <lightbox> -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </lightbox> -->
+  </body>
+</html>

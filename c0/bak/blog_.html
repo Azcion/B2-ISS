@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Assignment">
+		<title>c0::Blog</title>
+		<link rel="stylesheet" href="./css/style.min.css">
+		<link rel="icon" type="image/png" href="./img/favicon.ico">
+		<script src="./js/barba.umd.js"></script>
+		<script src="./js/barba-css.umd.js"></script>
+		<script src="./js/gsap.min.js"></script>
+		<script defer src="./js/app.js"></script>
+	</head>
+	<body barba="wrapper">
+
+		<div class="wrapper"><!-- <wrapper> -->
+			<header>
+				<a class="logo-container mobile" href="./">
+						<div class="logo">
+							<svg class="logo-svg" width="200" height="200" viewBox="0 0 130 210">
+								<g transform="matrix(9.912534872187157,0,0,9.912534872187157,-2.9562721627585375,-45.017471282903756)" fill="#ffffff">
+									<path d="M7.36 6.66 c1.88 0 3.6 0.78 4.84 2 l-1.58 1.62 c-0.84 -0.84 -2 -1.36 -3.26 -1.36 c-2.54 0 -4.58 2.06 -4.58 4.6 c0 2.52 2.04 4.6 4.58 4.6 c1.26 0 2.42 -0.54 3.26 -1.36 l1.58 1.6 c-1.24 1.26 -2.96 2.02 -4.84 2.02 c-3.8 0 -6.86 -3.08 -6.86 -6.86 c0 -3.8 3.06 -6.86 6.86 -6.86 z M7.36 11.88 c0.9 0 1.62 0.74 1.62 1.64 s-0.72 1.62 -1.62 1.62 c-0.92 0 -1.64 -0.72 -1.64 -1.62 s0.72 -1.64 1.64 -1.64 z"></path>
+								</g>
+								<g transform="matrix(1.7,0,0,1.7,36.87500081062317,166.13999967575074)" fill="#ffffff">
+									<path d="M6.45 18.25 c1.06 0 1.92 -0.44 2.5 -1.18 c0.12 -0.15 0.24 -0.18 0.4 -0.08 l1.15 0.67 c0.16 0.1 0.22 0.24 0.1 0.4 c-0.86 1.32 -2.38 2.2 -4.19 2.2 c-2.98 0 -5.16 -2.23 -5.16 -5.14 s2.18 -5.14 5.16 -5.14 c1.81 0 3.33 0.88 4.19 2.2 c0.12 0.16 0.06 0.3 -0.1 0.4 l-1.15 0.67 c-0.16 0.1 -0.28 0.07 -0.4 -0.08 c-0.58 -0.74 -1.44 -1.19 -2.5 -1.19 c-1.78 0 -3.1 1.28 -3.1 3.14 s1.32 3.13 3.1 3.13 z M18.13 5.800000000000001 c3.56 0 5.01 1.48 5.01 6.65 l0 1.19 c0 5.18 -1.45 6.66 -5.01 6.66 s-5.01 -1.48 -5.01 -6.66 l0 -1.19 c0 -5.17 1.45 -6.65 5.01 -6.65 z M18.13 7.890000000000001 c-1.99 0 -2.93 0.52 -2.93 4.56 l0 1.2 c0 4.04 0.94 4.56 2.93 4.56 s2.93 -0.52 2.93 -4.56 l0 -1.2 c0 -4.04 -0.94 -4.56 -2.93 -4.56 z M16.83 15.64 c-0.22 0 -0.33 -0.12 -0.24 -0.34 l1.88 -4.6 c0.06 -0.16 0.2 -0.24 0.36 -0.24 l0.62 0 c0.22 0 0.33 0.12 0.24 0.34 l-1.88 4.6 c-0.06 0.16 -0.2 0.24 -0.36 0.24 l-0.62 0 z M27.8 13.24 c-0.89 0 -1.61 -0.72 -1.61 -1.61 c0 -0.9 0.72 -1.63 1.61 -1.63 c0.9 0 1.62 0.73 1.62 1.63 c0 0.89 -0.72 1.61 -1.62 1.61 z M27.8 20.26 c-0.89 0 -1.61 -0.72 -1.61 -1.61 c0 -0.9 0.72 -1.63 1.61 -1.63 c0.9 0 1.62 0.73 1.62 1.63 c0 0.89 -0.72 1.61 -1.62 1.61 z M34.53 13.24 c-0.89 0 -1.61 -0.72 -1.61 -1.61 c0 -0.9 0.72 -1.63 1.61 -1.63 c0.9 0 1.62 0.73 1.62 1.63 c0 0.89 -0.72 1.61 -1.62 1.61 z M34.53 20.26 c-0.89 0 -1.61 -0.72 -1.61 -1.61 c0 -0.9 0.72 -1.63 1.61 -1.63 c0.9 0 1.62 0.73 1.62 1.63 c0 0.89 -0.72 1.61 -1.62 1.61 z"></path>
+								</g>
+							</svg>
+						</div>
+					</a>
+				<nav>
+					<p class="text-left"><a class="nav-here" href="./blog.html">Blog</a></p>
+					<p class="text-left"><a href="./gallery.html">Gallery</a></p>
+					<p class="text-left"><a href="./archive.html">Archive</a></p>
+					<a class="logo-container screen" href="./">
+						<div class="logo">
+							<svg class="logo-svg" width="200" height="200" viewBox="0 0 130 210">
+								<g transform="matrix(9.912534872187157,0,0,9.912534872187157,-2.9562721627585375,-45.017471282903756)" fill="#ffffff">
+									<path d="M7.36 6.66 c1.88 0 3.6 0.78 4.84 2 l-1.58 1.62 c-0.84 -0.84 -2 -1.36 -3.26 -1.36 c-2.54 0 -4.58 2.06 -4.58 4.6 c0 2.52 2.04 4.6 4.58 4.6 c1.26 0 2.42 -0.54 3.26 -1.36 l1.58 1.6 c-1.24 1.26 -2.96 2.02 -4.84 2.02 c-3.8 0 -6.86 -3.08 -6.86 -6.86 c0 -3.8 3.06 -6.86 6.86 -6.86 z M7.36 11.88 c0.9 0 1.62 0.74 1.62 1.64 s-0.72 1.62 -1.62 1.62 c-0.92 0 -1.64 -0.72 -1.64 -1.62 s0.72 -1.64 1.64 -1.64 z"></path>
+								</g>
+								<g transform="matrix(1.7,0,0,1.7,36.87500081062317,166.13999967575074)" fill="#ffffff">
+									<path d="M6.45 18.25 c1.06 0 1.92 -0.44 2.5 -1.18 c0.12 -0.15 0.24 -0.18 0.4 -0.08 l1.15 0.67 c0.16 0.1 0.22 0.24 0.1 0.4 c-0.86 1.32 -2.38 2.2 -4.19 2.2 c-2.98 0 -5.16 -2.23 -5.16 -5.14 s2.18 -5.14 5.16 -5.14 c1.81 0 3.33 0.88 4.19 2.2 c0.12 0.16 0.06 0.3 -0.1 0.4 l-1.15 0.67 c-0.16 0.1 -0.28 0.07 -0.4 -0.08 c-0.58 -0.74 -1.44 -1.19 -2.5 -1.19 c-1.78 0 -3.1 1.28 -3.1 3.14 s1.32 3.13 3.1 3.13 z M18.13 5.800000000000001 c3.56 0 5.01 1.48 5.01 6.65 l0 1.19 c0 5.18 -1.45 6.66 -5.01 6.66 s-5.01 -1.48 -5.01 -6.66 l0 -1.19 c0 -5.17 1.45 -6.65 5.01 -6.65 z M18.13 7.890000000000001 c-1.99 0 -2.93 0.52 -2.93 4.56 l0 1.2 c0 4.04 0.94 4.56 2.93 4.56 s2.93 -0.52 2.93 -4.56 l0 -1.2 c0 -4.04 -0.94 -4.56 -2.93 -4.56 z M16.83 15.64 c-0.22 0 -0.33 -0.12 -0.24 -0.34 l1.88 -4.6 c0.06 -0.16 0.2 -0.24 0.36 -0.24 l0.62 0 c0.22 0 0.33 0.12 0.24 0.34 l-1.88 4.6 c-0.06 0.16 -0.2 0.24 -0.36 0.24 l-0.62 0 z M27.8 13.24 c-0.89 0 -1.61 -0.72 -1.61 -1.61 c0 -0.9 0.72 -1.63 1.61 -1.63 c0.9 0 1.62 0.73 1.62 1.63 c0 0.89 -0.72 1.61 -1.62 1.61 z M27.8 20.26 c-0.89 0 -1.61 -0.72 -1.61 -1.61 c0 -0.9 0.72 -1.63 1.61 -1.63 c0.9 0 1.62 0.73 1.62 1.63 c0 0.89 -0.72 1.61 -1.62 1.61 z M34.53 13.24 c-0.89 0 -1.61 -0.72 -1.61 -1.61 c0 -0.9 0.72 -1.63 1.61 -1.63 c0.9 0 1.62 0.73 1.62 1.63 c0 0.89 -0.72 1.61 -1.62 1.61 z M34.53 20.26 c-0.89 0 -1.61 -0.72 -1.61 -1.61 c0 -0.9 0.72 -1.63 1.61 -1.63 c0.9 0 1.62 0.73 1.62 1.63 c0 0.89 -0.72 1.61 -1.62 1.61 z"></path>
+								</g>
+							</svg>
+						</div>
+					</a>
+					<p class="text-right"><a href="./about.html">About</a></p>
+					<p class="text-right"><a href="https://github.com/Azcion/B2-ISS">GitHub</a></p>
+					<p class="text-right"><a href="mailto:zak.klajderic@gmail.com">Contact</a></p>
+				</nav>
+
+				<div barba="container" id="top" lang="sl">
+					<div><h1 id="tagline">Moj&nbsp;blog</h1></div>
+				</div>
+			</header>
+
+			<main barba="container"><!-- <content> -->
+
+				<section lang="sl">
+					<article>
+						<div>
+							<p>Spisek člankov:</p>
+							<ul>
+								<li><a href="#antares"><span>Antares</span></a></li>
+								<li><a href="#for-loop"><span>For zanka</span></a></li>
+								<li><a href="#methane"><span>Methane</span></a></li>
+							</ul>
+						</div>
+						<hr>
+			
+						<h2 id="antares">Antares</h2>
+						<p>Iz Wikipedije, proste enciklopedije</p>
+						<p><a href="https://en.wikipedia.org/wiki/Antares" target="_blank"><strong>Antares</strong></a> je najsvetlejša zvezda v ozvezdju Škorpjona  in ena najsvetlejših na celotnem nočnem nebu. Poleg <strong><i>Aldebarana</i></strong>, <strong><i>Spike</i></strong> in <strong><i>Regula</i></strong> je ena izmed štirih najsvetlejših zvezd, ki ležjo manj kot 5<!--sup-->°<!--/sup--> od ekliptike. Po barvi podoben Aldebaran leži skoraj neposredno nasproti Antaresu v živalskem krogu.</p>
+						<p>V primerjavi z našim Soncem, bi njen premer dosegel Jupitrovo tirnico. Masa zvezde je 15 do 18 Sončevih, njen izsev pa je <del>10.000</del>50.000 krat večji. Oddaljen je približno 600 <a href="https://www.wolframalpha.com/input/?i=light+year" target="_blank">svetlobnih let</a> od Sonca in je dvozvezdje.</p>
+						<p>Ime izvira iz grščine in pomeni se drži nasproti Aresa (Marsa). Zaradi barvne podobnosti s planetom Mars so ga skozi zgodovino opazovali z zanimanjem. Po stari arabski tradiciji je Antares zvezda pesnika bojevnika Antare. Mnogo egipčanskih templjev je usmerjenih v smeri Antaresa.</p>
+						<p>Ker je Antares tako blizu ekliptike, ga lahko zakrije Luna in redko tudi kakšen planet. <b>17. novembra 2400</b> bo Antares zakrila Venera.</p>
+					</article>
+					<hr>
+					
+					<article>
+						<h2 id="for-loop">For zanka</h2>
+						<p>For zanka je manj dovzetna za povzročanje neskončnih zank, zato ker si primoran določiti vse pogoje zanke v prvi vrstici.</p>
+						<p>Trije izrazi znotraj narekovajev nadzorujejo delovanje:</p>
+						<ul>
+							<li>prvi izraz določi začetno stanje. Tu lahko uporabljaš katerokoli spremenljivko, vendar je dogovor tak, da se pri zankah uporablja spremenljivka $i. Če je potreben več kot en števec, se pogosto uporabljata še spremenljivki $j in $k.</li>
+							<li>drugi izraz je preizkus, ki določa, ali naj zanka nadaljuje z izvajanjem. Tu je lahko število, spremenljivka ali izraz, ki izračuna vrednost.</li>
+							<li>tretji izraz pokaže pot skozi zanko. Večinoma želiš iti skozi zanko korak za korakom, tako da je primerna uporaba operatorja za povečanje za 1 (++) ali zmanjšanje za 1(--). Lahko pa uporabiš večje korake naprimer $i+=10.</li>
+						</ul>
+						<p>Vir: <a href="http://www.medved.si" target="_blank">www.medved.si</a></p>
+					</article>
+					<hr>
+					
+					<article>
+						<h2 id="methane"><a href="http://www.flickr.com/photos/38141425@N03/" target="_blank">Methane</a></h2>
+						<p lang="en">Methane (play /ˈmɛθeɪn/) is a chemical compound with the chemical formula CH<sub>4</sub>. It is the simplest alkane, and the principal component of natural gas. Methane's bond angles are 109.5 degrees. Burning methane in the presence of oxygen produces carbon dioxide and water. The relative abundance of methane makes it an attractive fuel. However, because it is a gas at normal temperature and pressure, methane is difficult to transport from its source. It is generally transported in bulk by pipeline in its natural gas form, or <abbr title="Liquified Natural Gas">LNG</abbr> carriers in its liquefied form; few countries transport it by truck.</p>		
+					</article>
+				</section>
+
+			</main><!-- </content> -->
+
+			<br>
+			<footer>&copy; Copyright 2021 · Zak Klajderic</footer>
+
+		</div><!-- </wrapper> -->
+	</body>
+</html>

@@ -1,0 +1,16 @@
+include ../mixins/_header
+block vars
+
+header
+	+logo('mobile')
+	nav
+		+pal('blog')
+		+pal('gallery')
+		+pal('archive')
+		+logo('screen')
+		+par('about')
+		+par('GitHub', 'https://github.com/Azcion/B2-ISS')
+		+par('Contact', 'mailto:zak.klajderic@gmail.com')
+	div#top
+		div
+			block tagline

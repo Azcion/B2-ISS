@@ -1,0 +1,45 @@
+extends ./layouts/default.pug
+
+block vars
+	- pageTitle = 'Blog'
+
+block tagline
+	h1#tagline Moj&nbsp;blog
+
+block content
+	section(lang='sl')
+		article
+			div
+				p Spisek člankov:
+				ul
+					li
+						a(href='#antares')
+							span Antares
+					li
+						a(href='#for-loop')
+							span For zanka
+					li
+						a(href='#methane')
+							span Methane
+			h2#antares Antares
+			p Iz Wikipedije, proste enciklopedije
+			p <a href="https://en.wikipedia.org/wiki/Antares" target="_blank"><strong>Antares</strong></a> je najsvetlejša zvezda v ozvezdju Škorpjona  in ena najsvetlejših na celotnem nočnem nebu. Poleg <em>Aldebarana</em>, <em>Spike</em> in <em>Regula</em> je ena izmed štirih najsvetlejših zvezd, ki ležjo manj kot 5<!--sup-->°<!--/sup--> od ekliptike. Po barvi podoben Aldebaran leži skoraj neposredno nasproti Antaresu v živalskem krogu.
+			p V primerjavi z našim Soncem, bi njen premer dosegel Jupitrovo tirnico. Masa zvezde je 15 do 18 Sončevih, njen izsev pa je <del>10.000</del>50.000 krat večji. Oddaljen je približno 600 <a href="https://www.wolframalpha.com/input/?i=light+year" target="_blank">svetlobnih let</a> od Sonca in je dvozvezdje.
+			p Ime izvira iz grščine in pomeni se drži nasproti Aresa (Marsa). Zaradi barvne podobnosti s planetom Mars so ga skozi zgodovino opazovali z zanimanjem. Po stari arabski tradiciji je Antares zvezda pesnika bojevnika Antare. Mnogo egipčanskih templjev je usmerjenih v smeri Antaresa.
+			p Ker je Antares tako blizu ekliptike, ga lahko zakrije Luna in redko tudi kakšen planet. <b>17. novembra 2400</b> bo Antares zakrila Venera.
+		hr
+
+		article
+			h2#for-loop For zanka
+			p For zanka je manj dovzetna za povzročanje neskončnih zank, zato ker si primoran določiti vse pogoje zanke v prvi vrstici.
+			p Trije izrazi znotraj narekovajev nadzorujejo delovanje:
+			ul
+				li prvi izraz določi začetno stanje. Tu lahko uporabljaš katerokoli spremenljivko, vendar je dogovor tak, da se pri zankah uporablja spremenljivka $i. Če je potreben več kot en števec, se pogosto uporabljata še spremenljivki $j in $k li 	drugi izraz je preizkus, ki določa, ali naj zanka nadaljuje z izvajanjem. Tu je lahko število, spremenljivka ali izraz, ki izračuna vrednost li 	tretji izraz pokaže pot skozi zanko. Večinoma želiš iti skozi zanko korak za korakom, tako da je primerna uporaba operatorja za povečanje za 1 (++) ali zmanjšanje za 1(--). Lahko pa uporabiš večje korake naprimer $i+=10.
+			p Vir:
+				a(href='http://www.medved.si' target='_blank') www.medved.si
+		hr
+
+		article
+			h2#methane
+				a(href='http://www.flickr.com/photos/38141425@N03/' target='_blank') Methane
+			p(lang='en') Methane (play /ˈmɛθeɪn/) is a chemical compound with the chemical formula CH<sub>4</sub>. It is the simplest alkane, and the principal component of natural gas. Methane's bond angles are 109.5 degrees. Burning methane in the presence of oxygen produces carbon dioxide and water. The relative abundance of methane makes it an attractive fuel. However, because it is a gas at normal temperature and pressure, methane is difficult to transport from its source. It is generally transported in bulk by pipeline in its natural gas form, or <abbr title="Liquified Natural Gas">LNG</abbr> carriers in its liquefied form; few countries transport it by truck.

@@ -1,0 +1,71 @@
+{
+	"articles": [
+		{
+			"link": "https://layerci.com/blog/crypto-miners-are-killing-free-ci/",
+			"headline": "Crypto miners are killing free CI",
+			"content": [
+				"CI providers like LayerCI, GitLab, TravisCI, and Shippable are all worsening or shutting down their free tiers due to cryptocurrency mining attacks.",
+				"On September 1st, 2020, GitLab announced that their free CI offering was being restricted in response to \"usage.\" Two months later, TravisCI announced that a similar restriction in response to \"significant abuse.\""
+			]
+		},
+		{
+			"link": "https://www.fastcompany.com/90623905/ios-web-apps",
+			"headline": "Why some developers are avoiding app store headaches by going web-only",
+			"content": [
+				"Earlier this month, the indie developers Feross Aboukhadijeh and John Hiesey launched a new app called Wormhole, which lets users quickly share large, encrypted files with just a \"link\". But unlike most new mobile apps, Wormhole doesn’t show up in Apple’s App Store or the Google Play Store."
+			]
+		},
+		{
+			"link": "https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/",
+			"headline": "This programmer reverse engineered the Pfizer mRNA vaccine source code",
+			"content": [
+				"Reverse Engineering the source code of the BioNTech/Pfizer SARS-CoV-2 Vaccine",
+				"Sadly, You Can't Print Your Own (safe) mRNA Vaccine <a href=\"https://berthub.eu/articles/posts/sadly-you-cant-print-your-own-vaccine/\"><i>[article]</i></a>"
+			]
+		},
+		{
+			"link": "https://thecorrespondent.com/655/blockchain-the-amazing-solution-for-almost-nothing/86649455475-f933fe63",
+			"headline": "Blockchain, the amazing solution for almost nothing",
+			"content": [
+				"Blockchain technology is going to change everything: the shipping industry, the financial system, government … in fact, what won’t it change? But enthusiasm for it mainly stems from a lack of knowledge and understanding. The blockchain is a solution in search of a problem."
+			]
+		},
+		{
+			"link": "https://laconicml.com/computer-science-curriculum-youtube-videos/",
+			"headline": "This is The Entire Computer Science Curriculum in 1000 YouTube Videos",
+			"content": [
+				"In this article, we are going to create an entire Computer Science curriculum using only YouTube videos. The Computer Science curriculum is going to cover every skill essential for a Computer Science Engineer that has expertise in Artificial Intelligence and its subfields, like: Machine Learning, Deep Learning, Computer Vision, NLP, etc."
+			]
+		},
+		{
+			"link": "https://www.theregister.com/2020/06/01/linux_5_7/",
+			"headline": "Linus Torvalds rails against 80-character lines as a de facto programming standard",
+			"content": [
+				"Linux kernel overlord Linus Torvalds has railed against 80-character-lines as a de facto programming standard – and has moved to make reminders to keep things short a thing of the past."
+			]
+		},
+		{
+			"link": "https://github.com/linuxmint/cinnamon-screensaver/issues/354",
+			"headline": "Kids find a security flaw in Linux Mint by mashing keys",
+			"content": [
+				"A few weeks ago, my kids wanted to hack my linux desktop, so they typed and clicked everywhere, while I was standing behind them looking at them play... when the screensaver core dumped and they actually hacked their way in! wow, those little hackers... 🐈"
+			]
+		},
+		{
+			"link": "https://www.pcgamer.com/rockstar-thanks-gta-online-player-who-fixed-poor-load-times-official-update-coming/",
+			"headline": "Rockstar thanks GTA Online player who fixed poor load times, official update coming",
+			"content": [
+				"A player recently claimed to have improved GTA Online’s loading times by up to 70 percent. Turns out, they were right.",
+				"Rockstar Games has confirmed to PC Gamer that a fan-made solution to GTA Online's abysmal loading times will become official in a forthcoming update."
+			]
+		},
+		{
+			"link": "https://news.mit.edu/2020/brain-reading-computer-code-1215",
+			"headline": "To the brain, reading computer code is not the same as reading language",
+			"content": [
+				"Neuroscientists find that interpreting code activates a general-purpose brain network, but not language-processing centers.",
+				"“Understanding computer code seems to be its own thing. It’s not the same as language, and it’s not the same as math and logic,” says Anna Ivanova, an MIT graduate student and the lead author of the study."
+			]
+		}
+	]
+}

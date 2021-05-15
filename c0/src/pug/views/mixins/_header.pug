@@ -1,0 +1,12 @@
+mixin logo(platform)
+	a(class=`logo-container ${platform}` href='/')
+		div.logo
+			img.logo-svg(src='img/assets/logo.svg' alt='Logo')
+
+mixin pal(text)
+	p.text-left
+		a(href='/'+text) #{text}
+
+mixin par(text, link)
+	p.text-right
+		a(href=link||text) #{text}
