@@ -4,7 +4,7 @@ if (document.getElementById('particles')) {
 	particlesJS.load('particles', 'js/particles.json');
 }
 
-if (typeof barba === 'object' && typeof barbaCss === 'object') {
+/*if (typeof barba === 'object' && typeof barbaCss === 'object') {
 	barba.use(barbaCss);
 
 	barba.init({
@@ -19,7 +19,7 @@ if (typeof barba === 'object' && typeof barbaCss === 'object') {
 			}
 		]
 	});
-}
+}*/
 
 const expandButtons = document.getElementsByClassName('click-to-expand');
 Array.from(expandButtons).forEach(button =>
