@@ -1,0 +1,123 @@
+.pswp__caption {
+	background: hsla(0, 0%, 20%, 0.5);
+	font-size: 16px;
+	color: hsl(0, 0%, 80%);
+	width: fit-content;
+	max-width: 90%;
+	padding: 2px 8px;
+	border-radius: 4px;
+	position: absolute;
+	left: 50%;
+	bottom: 16px;
+	transform: translateX(-50%);
+
+	a {
+		color: #fff;
+		text-decoration: underline;
+	}
+}
+
+.pswp__caption {
+	text-align: center !important;
+}
+
+.gallery {
+	display: flex;
+	position: relative;
+	width: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	transition: all 0.2s;
+	will-change: transform;
+	user-select: none;
+	cursor: pointer;
+}
+
+.gallery.active {
+	cursor: grabbing;
+	transform: scale(1.01);
+}
+
+figure {
+	margin: 0;
+}
+
+.galleries {
+	button.click-to-expand {
+		position: absolute;
+		margin: -10px;
+		z-index: 1;
+		opacity: 0;
+		width: calc(100% + 20px);
+		height: 70px;
+	}
+
+	button.did-expand {
+		display: none;
+	}
+}
+
+.gallery {
+	figure,
+	div {
+		span {
+			display: block;
+			width: 0;
+			transition: all 0.5s 0.3s;
+		}
+
+		img {
+			transition: all 0.5s ease-in-out;
+		}
+
+		img:focus,
+		a:focus {
+			filter: none;
+		}
+	}
+}
+
+.gallery.g-tiny {
+	figure,
+	div {
+		span {
+			opacity: 0;
+			height: 0;
+		}
+
+		img {
+			width: 50px;
+			height: 50px;
+			object-fit: cover;
+		}
+	}
+}
+
+.gallery.g-med {
+	figure,
+	div {
+		span {
+			opacity: 1;
+			height: unset;
+			width: unset;
+		}
+
+		img {
+			width: 250px;
+			height: 250px;
+			object-fit: cover;
+		}
+	}
+}
+
+.gallery.g-tiny,
+.gallery.dragging {
+	a {
+		pointer-events: none;
+	}
+}
+
+.w {
+	color: white;
+}
