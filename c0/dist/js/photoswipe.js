@@ -1,7 +1,9 @@
 import PhotoSwipeLightbox from '../pswp/photoswipe-lightbox.esm.min.js';
 
 const localhost =
-	location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+	location.hostname === 'localhost' ||
+	location.hostname === '127.0.0.1' ||
+	location.hostname === '';
 const prefix = localhost ? '' : '/B2-ISS/c0';
 const path = prefix + '/dist/pswp/';
 const options = {
