@@ -45,6 +45,7 @@ figure {
 
 .galleries {
 	button.click-to-expand {
+		cursor: pointer;
 		position: absolute;
 		margin: -10px;
 		z-index: 1;
