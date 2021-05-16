@@ -1,12 +1,15 @@
-// Include Lightbox
-import PhotoSwipeLightbox from '/dist/pswp/photoswipe-lightbox.esm.min.js';
+import PhotoSwipeLightbox from '../pswp/photoswipe-lightbox.esm.min.js';
 
+const localhost =
+	location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+const prefix = localhost ? '' : '/B2-ISS/c0';
+const path = prefix + '/dist/pswp/';
 const options = {
 	gallerySelector: '.gallery',
 	childSelector: 'a',
 
-	pswpModule: '/dist/pswp/photoswipe.esm.min.js',
-	pswpCSS: '/dist/pswp/photoswipe.css',
+	pswpModule: path + 'photoswipe.esm.min.js',
+	pswpCSS: path + 'photoswipe.css',
 
 	showHideAnimationType: 'zoom',
 	preloadFirstSlide: false
