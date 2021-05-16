@@ -12,7 +12,7 @@ block content
 		div.galleries
 			each gallery in galleries
 				h2 #{gallery.title}
-				button.click-to-expand(id=`button-${gallery.path}`)
+				button.click-to-expand(title='Expand content' id=`button-${gallery.path}`)
 				div.gallery.g-tiny(id=`gallery-${gallery.path}`)
 					-
 						var i = 0;
