@@ -29,7 +29,8 @@ block content
 							span #{author}
 							a(
 								href=`${path}/${filename}`
-								data-size=`${imgData[filename].w}x${imgData[filename].h}`
-								data-caption=alt
+								data-pswp-width=`${imgData[filename].w}`
+								data-pswp-height=`${imgData[filename].h}`
+								data-cropped='true'
 							)
 								img(alt=alt src=`${path}/${file}.500.webp`)

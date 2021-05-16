@@ -79,10 +79,12 @@ function html() {
 		)
 		.pipe(data(getImageData()))
 		.pipe(pug())
-		.pipe(prettier({
-			printWidth: 10000,
-			proseWrap: "never"
-		}))
+		.pipe(
+			prettier({
+				printWidth: 10000,
+				proseWrap: 'never'
+			})
+		)
 		.pipe(dest('./dist'));
 }
 
@@ -99,9 +101,9 @@ exports.watch = function () {
 const makeScaledVersions = (file, cb) => {
 	const square = file.clone();
 	square.scale = {
-		maxWidth: 500,
-		maxHeight: 500,
-		fit: 'cover',
+		maxWidth: 250,
+		maxHeight: 250,
+		fit: 'outside',
 		format: 'webp',
 		metadata: false,
 		formatOptions: {
