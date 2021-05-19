@@ -7,8 +7,14 @@ mixin logo(platform)
 
 mixin pal(text)
 	p.text-left
-		a(href=root+text) #{text}
+		a(
+			href=root+text
+			class= pageTitle.toLowerCase() == text ? 'nav-here' : ''
+		) #{text}
 
 mixin par(text, link)
 	p.text-right
-		a(href=link || root+text) #{text}
+		a(
+			href=link || root+text
+			class= pageTitle.toLowerCase() == text ? 'nav-here' : ''
+		) #{text}
